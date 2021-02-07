@@ -1,0 +1,145 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 56px;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+h1 {
+    margin: auto auto;
+    text-align: center;
+}
+
+.bg {
+    /* The image used */
+    background-image: linear-gradient(to right top, #48bfe3, #1cb0e6, #00a1e7, #0090e5, #327ddf, #4170db, #5162d4, #6152cb, #6446c8, #6938c4, #6e25be, #7400b8);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login-button {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px;
+    display: block;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    color: hotpink;
+    border: 2px solid hotpink;
+}
+
+.page-title {
+    margin-bottom: 50px;
+}
+
+.page-quote {
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.login-credentials {
+    display: flex;
+    flex-direction: column;
+}
+
+#username-field,
+#password-field {
+    margin-bottom: 10px;
+}
+
+.btn {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+
+/* Container holding the image and the text */
+
+.tracking-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.tracking-options img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.track {
+    position: relative;
+}
+
+.text-block {
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.track a {
+    color: white;
+    text-decoration: none;
+}
+
+.track a:hover {
+    background-color: grey;
+    opacity: 0.5;
+}
+
+@media (min-width: 48em) {
+    .navbar-nav {
+        margin-left: auto!important;
+        margin-right: 0!important;
+    }
+    .photo img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+    }
+    .login-button {
+        font-size: 35px;
+    }
+    .page-title {
+        margin-bottom: 75px;
+    }
+    img {
+        max-width: 500px;
+    }
+    .tracking-options-label {
+        background-color: black;
+        padding: 10px;
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        /* horizontal alignment */
+        top: 50%;
+        /* vertical alignment */
+        transform: translate(-50%, -50%);
+    }
+}
